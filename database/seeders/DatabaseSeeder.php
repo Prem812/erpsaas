@@ -16,9 +16,9 @@ class DatabaseSeeder extends Seeder
         $adminUser = User::factory()
             ->withPersonalCompany()  // Ensures the user has a personal company created alongside
             ->create([
-                'name' => 'Admin',
-                'email' => 'admin@gmail.com',
-                'password' => bcrypt('password'),
+                'name' => 'Prem Sagar Shah',
+                'email' => 'prem.shah8120@gmail.com',
+                'password' => bcrypt('Prem@1234'),
                 'current_company_id' => 1,  // Assuming this will be the ID of the created company
                 'created_at' => now(),
             ]);
